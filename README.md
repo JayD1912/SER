@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Khaki Mitra: Smart India Hackathon Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Khaki Mitra is an innovative solution aimed at enhancing the efficiency and effectiveness of police emergency response systems. Developed as part of the **Smart India Hackathon**, this project introduces advanced technologies to analyze emergency calls, predict the emotional state of callers, and provide actionable insights for responders.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚔 **Project Overview**
 
-### `npm start`
+Indian police forces handle 2200-3000 calls daily, with an average response time of over 32 minutes. This project addresses the critical need for faster and more accurate responses by leveraging real-time voice analysis and emotional prediction.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Key Objectives**
+1. **Emotion Detection:** Analyze live call audio to determine:
+   - Stressful Voice
+   - Drunk Voice
+   - Prank Voice
+   - Abusive Voice
+   - Painful Voice
+   - Other mental states
+2. **Dashboard Integration:** Provide responders with a user-friendly interface for accessing call analytics and caller details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🔧 **Proposed Solution**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Features**
+- **Dual Prognosis Model:** Employs two machine learning models to improve emotion detection accuracy.
+- **Interactive Dashboard:** Displays caller emotions, call types, and analytics with real-time updates.
+- **Live Call Integration:** Ensures seamless handling of live emergency calls.
 
-### `npm run build`
+### **Technologies Used**
+- **Audio Processing:** Mel spectrograms for feature extraction.
+- **Machine Learning Algorithms:**
+  - Bi-LSTM (Hindi + English)
+  - Transformer Encoder
+  - KNN Classifier
+  - Logistic Regression
+- **Tech Stack:**
+  - React.js, Chart.js, Highcharts (Frontend)
+  - Flask (Backend)
+  - Twilio (Call Integration via REST APIs)
+  - Stanza (NLP for regional dialects)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ **Architecture and Methodology**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Stages of Development**
+1. Build an **audio dataset** using recordings from diverse speakers.
+2. Develop the **dual prognosis model** for emotion prediction.
+3. Create an **interactive dashboard** for real-time analytics.
+4. Integrate the solution with **live calls** via Twilio APIs.
+5. Ensure seamless **module integration** for production readiness.
 
-### `npm run eject`
+### **Critical Components**
+- **Feature Engineering:** Statistical feature extraction from audio data.
+- **Noise Detection:** Identify and classify audio noise types using CNN models.
+- **Cloud Deployment:** Plan for scalable deployment and future enhancements.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌟 **Key Features**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Real-time Call Analysis:**
+   - Emotion recognition
+   - Call type identification
+2. **Location Tracking:**
+   - Notify nearest police stations about the caller’s location.
+3. **Analytical Insights:**
+   - Heat maps for call types
+   - Day-wise analytical reports
+4. **Emergency Dispatch:**
+   - SMS notifications post-dispatch
+   - Feedback forms for callers
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📈 **Future Scope**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Expand to detect additional emotions and conditions.
+2. Deploy the solution on cloud platforms for scalability.
+3. Enhance the accuracy of predictive models.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 **Results**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **SER Accuracy:**
+  - Bi-LSTM: High accuracy for Hindi and English calls.
+  - KNN Classifier: Achieved 65% accuracy with hyperparameter tuning.
+- **Noise Classification:** Successfully classified noise types using UrbanSound8K dataset.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 **Dashboard Features**
+- Call type and emotion identification
+- Heat maps for analytical visualization
+- Location tracking for dispatch planning
+- SMS updates and feedback collection
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **Contributors**
+**Team ByteCoders!**  
+Developed as part of the **Smart India Hackathon** initiative.
